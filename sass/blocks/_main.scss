@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  align-items: center;
+  margin-bottom: 160px;
+  font-family: $font-family;
+  margin-top: 232px;
+
+  &-contant {
+    &__title {
+      margin-bottom: 60px;
+      font-weight: 800;
+      font-size: 45px;
+      color: $primary-brown-color-text;
+
+      span {
+        color: $primary-yellow-color-text;
+      }
+    }
+
+    .advantages {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-bottom: 60px;
+      
+      &__item {
+        display: flex;
+        align-items: center;
+        width: 48%;
+        line-height: 1.1;
+
+        &-icon {
+          margin-right: 17px;
+        }
+
+        &-description {
+          h3 {
+            margin-bottom: 9px;
+            font-weight: 800;
+            color: $primary-yellow-color-text;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-weight: 400;
+            color: $primary-brown-color-text;
+          }
+        }
+      }
+    }
+
+    &__button {
+      padding: 22px 52px;
+    }
+  }
+}

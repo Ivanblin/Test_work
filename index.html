@@ -4,9 +4,177 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Pizza cheff</title>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container header__wraper">
+      <div class="header__wraper-logo logo">
+        <img class="logo__img" src="./images/logo.png" alt="">
+        <span class="logo__name">Pizza<br/>cheff</span>
+      </div>
+      <nav class="header__wraper-navigation navigation">
+        <ul class="navigation__links">
+          <li class="navigation__links-item links-item"><a data-hash="pizzas">Пиццы</a></li>
+          <li class="navigation__links-item links-item"><a href="#">Напитки</a></li>
+          <li class="navigation__links-item links-item"><a data-hash="delivery">Доставка и оплата</a></li>
+          <li class="navigation__links-item links-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div id="burger__menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="mobile-menu" class="menu__mobile">
+        <nav class="menu__mobile-navigation mobile-navigation">
+          <ul class="mobile-navigation__links">
+            <li class="mobile-navigation__item links-item"><a data-hash="pizzas">Пиццы</a></li>
+            <li class="mobile-navigation__item links-item"><a href="#">Напитки</a></li>
+            <li class="mobile-navigation__item links-item"><a data-hash="delivery">Доставка и оплата</a></li>
+            <li class="mobile-navigation__item links-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="main">
+      <div class="main-contant">
+        <h1 class="main-contant__title">
+          Самая вкусная пицца в мире
+          <span>только в Pizza Cheff</span>
+        </h1>
+        <div class="advantages">
+          <div class="advantages__item">
+            <img src="./images/advanteges/dough.png" alt="" class="advantages__item-icon">
+            <div class="advantages__item-description">
+              <h3>Лучшее тесто</h3>
+              <p>
+                Мы создаем тесто только из отборной итальянской муки наивысшего качества
+              </p>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <img src="./images/advanteges/kitchen_pack.png" alt="" class="advantages__item-icon">
+            <div class="advantages__item-description">
+              <h3>лучшие повара</h3>
+              <p>Пиццы готовят самые профессиональные итальянские повара</p>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <img src="./images/advanteges/quality.png" alt="" class="advantages__item-icon">
+            <div class="advantages__item-description">
+              <h3>гарантия качества</h3>
+              <p>Наша пиццерия получила множество наград и признаний по всему миру</p>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <img src="./images/advanteges/recipes.png" alt="" class="advantages__item-icon">
+            <div class="advantages__item-description">
+              <h3>отборные рецепты</h3>
+              <p>Мы используем рецепты от мировых лидеров в изготовлении пиццы</p>
+            </div>
+          </div>
+        </div>
+        <button data-hash="pizzas" class="button main-contant__button">Выбрать пиццу</button>
+      </div>
+      <div class="main-preview">
+        <img class="main-preview__img" src="./images/pizza_big.png" alt="">
+      </div>
+    </main>
+    
+    <section id="pizzas" class="menu">
+      <h2 class="menu__title">Выберите свою любимую пиццу</h2>
+      <div class="menu-list">
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas1.png" alt="" class="item__preview">
+          <div class="item__name">Мясная Делюкс</div>
+          <div class="item__description">Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas2.png" alt="" class="item__preview">
+          <div class="item__name">Морская Премиум</div>
+          <div class="item__description">Перец, сыр, креветки, кальмары, мидии, лосось</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas3.png" alt="" class="item__preview">
+          <div class="item__name">Бекон и Сосиски</div>
+          <div class="item__description">Бекон, сыр, сосиски, ананас, томатная паста</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas4.png" alt="" class="item__preview">
+          <div class="item__name">Куриная Делюкс</div>
+          <div class="item__description">Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas5.png" alt="" class="item__preview">
+          <div class="item__name">Барбекю Премиум</div>
+          <div class="item__description">Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas6.png" alt="" class="item__preview">
+          <div class="item__name">Пепперони Дабл</div>
+          <div class="item__description">Пепперони, сыр, колбаса 2 видов: обжаренная и вареная</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas7.png" alt="" class="item__preview">
+          <div class="item__name">Куриное трио</div>
+          <div class="item__description">Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+        <div class="menu-list__item item">
+          <img src="./images/pizzas/pizzas8.png" alt="" class="item__preview">
+          <div class="item__name">Сырная</div>
+          <div class="item__description">Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный</div>
+          <button class="button item__button">В корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="delivery" class="feedback">
+      <div class="feedback__content">
+        <h2 class="feedback__content-title">
+          Хватит думать!<br/>
+          <span>Доставим заказ за 30 минут!</span>
+        </h2>
+        <p class="feedback__content-description">Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
+      </div>
+      <div class="feedback__form">
+        <div id="preloader-form" class="feedback__form-loader"></div>
+        <form id="form" action="">
+          <p id="error-form" class="feedback__form-error">Устраните ошибки в заполнении формы</p>
+          <p id="info-form" class="feedback__form-info">Данные успешно отправлены! Перезвоним Вам в ближайшее время</p>
+          <input id="form-name" class="feedback__form-name" type="text" placeholder="Ваше имя">
+          <input id="form-adress" class="feedback__form-adress" type="text" placeholder="Адрес доставки">
+          <input id="form-tel" class="tel" placeholder="Телефон">
+          <button id="submit-form" class="button feedback__form-button">Оформить заказ</button>
+        </form>
+      </div>
+      <div class="feedback__preview">
+        <img class="feedback__preview-img" src="./images/pizzzzza.png" alt="">
+      </div>
+    </section>
+
+    <div class="modal">
+      <img id="modal-img" class="modal__preview" src="" alt="">
+      <span id="close-modal" class="gg-close"></span>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 </html>

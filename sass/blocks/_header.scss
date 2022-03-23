@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  font-family: $font-family;
+  background-color: #fff;
+  box-shadow: 0px 3px 14px 1px rgba(152,152,152,0.2);
+  z-index: 10;
+
+  &__wraper {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+    @media screen and (max-width: $screen-sm) {
+      justify-content: space-between;
+      padding: 15px 10px;
+    }
+
+    &-logo {
+      display: flex;
+      align-items: center;
+      margin-right: 250px;
+
+      @media screen and (max-width: $screen-md) {
+        margin-right: 10%;
+      }
+    }
+
+    .logo {
+      &__img {
+        margin-right: 8px;
+      }
+
+      &__name {
+        font-weight: 900;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #ffc468;
+      }
+    }
+
+    .navigation {
+      &__links {
+        display: flex;
+
+        &-item {
+          margin-right: 50px;
+
+          @media screen and (max-width: $screen-md) {
+            margin-right: 25px;
+          }
+
+          @media screen and (max-width: $screen-sm) {
+            display: none;
+          }
+          
+          a {
+            font-weight: 400;
+            font-size: 16px;
+            text-decoration: none;
+            color: #a46b00;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover{
+              color: #ffa000;
+              -webkit-text-shadow: 2px 2px 2px #000;
+              -moz-text-shadow: 2px 2px 2px #000;
+                  text-shadow: 2px 2px 2px #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu__mobile {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 35px 0;
+  background-color: #fff;
+  text-align: center;
+
+  .mobile-navigation {
+    &__item {
+      margin-bottom: 10px;
+
+      a {
+        color: #a46b00;
+        text-decoration: none;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.menu__mobile_open {
+  display: block;
+}
